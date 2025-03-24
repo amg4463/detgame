@@ -143,7 +143,7 @@ async def websocket_handler(websocket, path):
             active_keys = new_keys
 
         except websockets.exceptions.ConnectionClosed:
-            print("❌ WebSocket Disconnected")
+            print("❌ WebSocket Disconnect")
             break
 
 asyncio.run(detect_and_control())
